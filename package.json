@@ -1,8 +1,17 @@
 {
   "name": "web-last-block",
   "version": "1.0.0",
+  "description": "1.6-practice",
+  "keywords": [
+    "web",
+    "scss",
+    "html",
+    "javascript",
+    "webpack"
+  ],
   "license": "ISC",
   "author": "Mariia Ovchinnikova",
+  "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
     "predeploy": "npm run build",
