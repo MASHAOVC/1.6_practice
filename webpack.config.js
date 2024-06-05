@@ -1,6 +1,7 @@
 const path = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
   entry: './src/index.js',
@@ -41,13 +42,32 @@ module.exports = {
       // Подключаем шрифты из CSS
       {
         test: /\.(eot|ttf|woff|woff2)$/,
-        use: ['file-loader']
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: './fonts/[name].[ext]'
+            }
+          }
+        ]
       },
 
       // Подключаем картинки из CSS
       {
         test: /\.(svg|png|jpg|jpeg|webp)$/,
-        use: ['file-loader']
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[path][name].[ext]'
+            }
+          }
+        ]
+      },
+
+      {
+        test: /normalize\.css$/,
+        use: ['style-loader', 'css-loader']
       }
     ]
   },
@@ -62,6 +82,20 @@ module.exports = {
         removeComments: true,
         collapseWhitespace: false
       }
+    }),
+    // Кладем стили в отдельный файлик
+    new MiniCssExtractPlugin({
+      filename: 'style.css'
+    }),
+    // Копируем картинки
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, './src/img'),
+          to: path.resolve(__dirname, 'dist'),
+          noErrorOnMissing: true
+        }
+      ]
     })
   ]
 }
