@@ -42,27 +42,15 @@ module.exports = {
       // Подключаем шрифты из CSS
       {
         test: /\.(eot|ttf|woff|woff2)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: './fonts/[name].[ext]'
-            }
-          }
-        ]
+        type: 'asset/resource',
+        dependency: { not: ['url'] },
       },
 
       // Подключаем картинки из CSS
       {
         test: /\.(svg|png|jpg|jpeg|webp)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[path][name].[ext]'
-            }
-          }
-        ]
+        type: 'asset/resource',
+        dependency: { not: ['url'] },
       },
 
       {

@@ -1,3 +1,7 @@
+button {
+    font-family: inherit;
+}
+
 .header {
   display: flex;
   padding-top: 18.59px;
@@ -30,15 +34,18 @@
 .header__logo {
   width: 96.55px;
   height: 50.81px;
+  background-image: url(../img/Group.png);
 }
 
 .header__divider-right {
   margin-right: 20px;
+  background-image: url(../img/divider.svg);
 }
 
 .header__divider-left {
   margin-right: 20px;
   display: none;
+  background-image: url(../img/divider.svg);
 }
 
 .header__button-repair {
@@ -56,4 +63,319 @@
   border: none;
   background: none;
   background-image: url(../img/checkstatus.svg);
+}
+
+.main {
+  background-color: #f8f8f8;
+  padding-bottom: 35px;
+}
+
+.main__heading-line {
+  display: flex;
+}
+
+.main__highlight {
+  margin-top: 24px;
+  margin-right: 12px;
+  width: 4px;
+  height: 40px;
+  background-color: #41f6d7;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+.main__heading {
+  font-weight: 700;
+  font-size: 28px;
+  margin-top: 24px;
+}
+
+.main__navigation {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-left: 16px;
+  overflow: scroll;
+  white-space: nowrap;
+}
+
+.main__navigation::-webkit-scrollbar {
+  display: none;
+}
+
+.main__button {
+  font-size: 16px;
+  border: none;
+  background: none;
+  padding: 8px 16px;
+  color: #7e7e82;
+}
+
+.main__button--selection--selected {
+  border: 2px solid #b8ffec;
+  background-color: #ffffff;
+  border-radius: 6px;
+}
+
+.main__section-aboutus {
+  margin-top: 24px;
+}
+
+.main__text-aboutus {
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.main__text-aboutus-2d {
+  margin-top: 24px;
+}
+
+.main__readmore {
+  display: flex;
+  font-weight: 500;
+  font-size: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.main__button-readmore {
+  background: none;
+  background-image: url(../img/icon-expand.png);
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-position: center;
+  background-size: contain;
+  margin-right: 8px;
+}
+
+.main__image-aboutus {
+  width: 100%;
+  background-image: url(../img/MG_3223.jpg);
+}
+
+.header__button-call {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: none;
+  margin-right: 16px;
+  background-image: url(../img/call.svg);
+}
+
+.header__button-chat {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: none;
+  margin-right: 16px;
+  background-image: url(../img/chat.svg);
+}
+
+.header__button-profile {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: none;
+  background-image: url(../img/profile.svg);
+}
+
+.header__center {
+  align-self: center;
+  margin-right: 20px;
+  display: none;
+}
+
+.header__heading-line {
+  display: none;
+}
+
+.header__repair-text {
+  display: none;
+}
+
+.header__checkstatus-text {
+  display: none;
+}
+
+.main__paragraphs-aboutus-wrapper {
+  max-height: 90px;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .main__section-aboutus {
+    display: flex;
+    margin-right: 24px;
+    margin-left: 24px;
+    gap: 48px;
+    flex-basis: 0;
+  }
+
+  .main__readmore {
+    margin-top: 10px;
+  }
+
+  .main__text-aboutus-2d {
+    display: block;
+    margin-right: 0;
+  }
+
+  .header__center {
+    display: block;
+  }
+
+  .header__button-burger {
+    margin-right: 20px;
+  }
+
+  .header {
+    padding: 24px;
+  }
+
+  .header__divider-left {
+    display: block;
+  }
+
+  .main__highlight {
+    margin-right: 20px;
+  }
+
+  .main__heading-line {
+    margin-bottom: 32px;
+  }
+
+  .main__heading {
+    margin-bottom: 0;
+  }
+
+  .main__navigation {
+    margin-left: 24px;
+  }
+
+  .main__text-aboutus {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .main__aboutus-wrapper {
+    width: 50%;
+  }
+
+  .main__image-aboutus-wrapper {
+    width: 50%;
+  }
+
+  .main__paragraphs-aboutus-wrapper {
+    max-height: 160px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .main__navigation {
+    flex-wrap: wrap;
+    margin-left: 32px;
+  }
+
+  .main__heading-line {
+    display: none;
+  }
+
+  .header__left {
+    display: none;
+  }
+
+  .header__center {
+    display: none;
+  }
+
+  .header__divider-right {
+    display: none;
+  }
+
+  .header {
+    background-color: #f8f8f8;
+    padding: 0;
+  }
+
+  .header__heading-line {
+    display: flex;
+    flex-grow: 1;
+  }
+
+  .header__highlight {
+    margin-right: 30px;
+    width: 4px;
+    height: 40px;
+    background-color: #41f6d7;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+  }
+
+  .header__heading {
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+
+  .header__right {
+    display: flex;
+    margin-bottom: 8px;
+    align-items: center;
+  }
+
+  body {
+    padding-top: 42px;
+    padding-right: 25px;
+    padding-bottom: 49px;
+  }
+
+  .main {
+    padding-bottom: 0;
+  }
+
+  .main__section-aboutus {
+    margin-right: 0;
+    margin-top: 16px;
+    margin-left: 32px;
+    display: flex;
+  }
+
+  .main__button {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  .header__repair-text {
+    display: inline-block;
+    font-weight: 500;
+    margin-right: 9px;
+  }
+
+  .header__checkstatus-text {
+    display: inline-block;
+    font-weight: 500;
+    margin-right: 9px;
+  }
+
+  .main__aboutus-wrapper {
+    margin-top: 9px;
+    width: 50%;
+  }
+
+  .main__image-aboutus-wrapper {
+    width: 50%;
+  }
+
+  .main__paragraphs-aboutus-wrapper {
+    max-height: 160px;
+  }
+
+  .header__checkstatus-text {
+    margin-left: 16px;
+  }
 }
