@@ -4,10 +4,7 @@ button {
 
 .header {
   display: flex;
-  padding-top: 18.59px;
-  padding-bottom: 18.59px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 18.59px 16px;
   background-color: #ffffff;
 }
 
@@ -15,10 +12,14 @@ button {
   display: flex;
   flex-grow: 1;
   align-self: center;
+  gap: 16px;
 }
 
 .header__right {
+  display: flex;
   align-self: center;
+  gap: 16px;
+
 }
 
 .header__button-burger {
@@ -27,7 +28,6 @@ button {
   border: none;
   background: none;
   background-image: url(../img/burger.svg);
-  margin-right: 16px;
   align-self: center;
 }
 
@@ -39,14 +39,20 @@ button {
 }
 
 .header__divider-right {
-  margin-right: 20px;
+  display: inline-block;
   background-image: url(../img/divider.svg);
+  width: 2px;
+  height: 32px;
+  margin-right: 4px;
+  align-self: center;
 }
 
 .header__divider-left {
-  margin-right: 20px;
   display: none;
   background-image: url(../img/divider.svg);
+  width: 2px;
+  height: 32px;
+  align-self: center;
 }
 
 .header__button-repair {
@@ -55,7 +61,6 @@ button {
   border: none;
   background: none;
   background-image: url(../img/repair.svg);
-  margin-right: 16px;
 }
 
 .header__button-checkstatus {
@@ -71,7 +76,6 @@ button {
   height: 40px;
   border: none;
   background: none;
-  margin-right: 16px;
   background-image: url(../img/call.svg);
 }
 
@@ -80,7 +84,6 @@ button {
   height: 40px;
   border: none;
   background: none;
-  margin-right: 16px;
   background-image: url(../img/chat.svg);
 }
 
@@ -128,12 +131,13 @@ button {
     margin-right: 0;
   }
 
-  .header__center {
-    display: block;
+  .header__left {
+    gap: 20px;
   }
 
-  .header__button-burger {
-    margin-right: 20px;
+  .header__center {
+    display: flex;
+    gap: 16px;
   }
 
   .header {
@@ -178,7 +182,7 @@ button {
   }
 }
 
-@media screen and (min-width: 1120px) {
+@media screen and (min-width: 1366px) {
   .main__navigation {
     flex-wrap: wrap;
     margin-left: 32px;
