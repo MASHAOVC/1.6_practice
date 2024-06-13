@@ -6,6 +6,10 @@
 
 body {
   font-family: $font-stack;
-  background-color: #F8F8F8;
-}
+  background-color: $color-base;
 
+  @media screen and (min-width: 1366px) {
+    padding-top: 42px;
+    padding-right: 22px;
+  }
+}

@@ -1,11 +1,16 @@
-button {
-    font-family: inherit;
-}
-
 .header {
   display: flex;
   padding: 18.59px 16px;
-  background-color: #ffffff;
+  background-color: $color-base-secondary;
+
+  @media screen and (min-width: $screen-md) {
+    padding: 24px;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    background-color: $color-base;
+    padding: 0;
+  }
 }
 
 .header__left {
@@ -13,6 +18,14 @@ button {
   flex-grow: 1;
   align-self: center;
   gap: 16px;
+
+  @media screen and (min-width: $screen-md) {
+    gap: 20px;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    display: none;
+  }
 }
 
 .header__right {
@@ -20,6 +33,11 @@ button {
   align-self: center;
   gap: 16px;
 
+  @media screen and (min-width: $screen-lg) {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
 }
 
 .header__button-burger {
@@ -45,6 +63,10 @@ button {
   height: 32px;
   margin-right: 4px;
   align-self: center;
+
+  @media screen and (min-width: $screen-lg) {
+    display: none;
+  }
 }
 
 .header__divider-left {
@@ -53,6 +75,10 @@ button {
   width: 2px;
   height: 32px;
   align-self: center;
+
+  @media screen and (min-width: $screen-md) {
+    display: block;
+  }
 }
 
 .header__button-repair {
@@ -96,194 +122,66 @@ button {
 }
 
 .header__center {
-  align-self: center;
+  display: none;
   margin-right: 20px;
-  display: none;
-}
+  align-self: center;
 
-.header__heading-line {
-  display: none;
-}
-
-.header__repair-text {
-  display: none;
-}
-
-.header__checkstatus-text {
-  display: none;
-}
-
-@media screen and (min-width: 768px) {
-  .main__section-aboutus {
-    display: flex;
-    margin-right: 24px;
-    margin-left: 24px;
-    gap: 48px;
-    flex-basis: 0;
-  }
-
-  .main__readmore {
-    margin-top: 10px;
-  }
-
-  .main__text-aboutus-2d {
-    display: block;
-    margin-right: 0;
-  }
-
-  .header__left {
-    gap: 20px;
-  }
-
-  .header__center {
+  @media screen and (min-width: $screen-md) {
     display: flex;
     gap: 16px;
   }
 
-  .header {
-    padding: 24px;
-  }
-
-  .header__divider-left {
-    display: block;
-  }
-
-  .main__highlight {
-    margin-right: 20px;
-  }
-
-  .main__heading-line {
-    margin-bottom: 32px;
-  }
-
-  .main__heading {
-    margin-bottom: 0;
-  }
-
-  .main__navigation {
-    margin-left: 24px;
-  }
-
-  .main__text-aboutus {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .main__aboutus-wrapper {
-    width: 50%;
-  }
-
-  .main__image-aboutus-wrapper {
-    width: 50%;
-  }
-
-  .main__paragraphs-aboutus-wrapper {
-    max-height: 160px;
+  @media screen and (min-width: $screen-lg) {
+    display: none;
   }
 }
 
-@media screen and (min-width: 1366px) {
-  .main__navigation {
-    flex-wrap: wrap;
-    margin-left: 32px;
-  }
+.header__heading-line {
+  display: none;
 
-  .main__heading-line {
-    display: none;
-  }
-
-  .header__left {
-    display: none;
-  }
-
-  .header__center {
-    display: none;
-  }
-
-  .header__divider-right {
-    display: none;
-  }
-
-  .header {
-    background-color: #f8f8f8;
-    padding: 0;
-  }
-
-  .header__heading-line {
+  @media screen and (min-width: $screen-lg) {
     display: flex;
     flex-grow: 1;
+    gap: 30px;
+    margin-bottom: 8px;
   }
+}
 
-  .header__highlight {
-    margin-right: 30px;
+.header__repair-text {
+  display: none;
+
+  @media screen and (min-width: $screen-lg) {
+    display: inline-block;
+    font-weight: 500;
+    margin-right: -24px;
+  }
+}
+
+.header__checkstatus-text {
+  display: none;
+
+  @media screen and (min-width: $screen-lg) {
+    display: inline-block;
+    font-weight: 500;
+    margin-right: -24px;
+  }
+}
+
+.header__highlight {
+  @media screen and (min-width: $screen-lg) {
     width: 4px;
     height: 40px;
-    background-color: #41f6d7;
+    background-color: $color-highlight;
     border-bottom-right-radius: 50px;
     border-top-right-radius: 50px;
   }
+}
 
-  .header__heading {
+.header__heading {
+  @media screen and (min-width: $screen-lg) {
     font-weight: 700;
-    font-size: 28px;
-    margin-bottom: 8px;
-    margin-top: 0;
-  }
-
-  .header__right {
-    display: flex;
-    margin-bottom: 8px;
-    align-items: center;
-  }
-
-  body {
-    padding-top: 42px;
-    padding-right: 25px;
-    padding-bottom: 49px;
-  }
-
-  .main {
-    padding-bottom: 0;
-  }
-
-  .main__section-aboutus {
-    margin-right: 0;
-    margin-top: 16px;
-    margin-left: 32px;
-    display: flex;
-  }
-
-  .main__button {
-    padding-left: 22px;
-    padding-right: 22px;
-  }
-
-  .header__repair-text {
-    display: inline-block;
-    font-weight: 500;
-    margin-right: 9px;
-  }
-
-  .header__checkstatus-text {
-    display: inline-block;
-    font-weight: 500;
-    margin-right: 9px;
-  }
-
-  .main__aboutus-wrapper {
-    margin-top: 9px;
-    width: 50%;
-  }
-
-  .main__image-aboutus-wrapper {
-    width: 50%;
-  }
-
-  .main__paragraphs-aboutus-wrapper {
-    max-height: 160px;
-  }
-
-  .header__checkstatus-text {
-    margin-left: 16px;
+    font-size: $font-size-xl;
+    margin: 0;
+    align-self: center;
   }
 }

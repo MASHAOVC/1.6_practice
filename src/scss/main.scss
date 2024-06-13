@@ -1,25 +1,47 @@
 .main {
-  padding-bottom: 35px;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: $screen-md) {
+    margin-bottom: 32px;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    margin-bottom: 51px;
+  }
 }
 
 .main__heading-line {
   display: flex;
+  margin: 24px 0;
+  align-items: center;
+  gap: 12px;
+
+  @media screen and (min-width: $screen-md) {
+    margin-bottom: 32px;
+    gap: 20px;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    display: none;
+  }
 }
 
 .main__highlight {
-  margin-top: 24px;
-  margin-right: 12px;
   width: 4px;
   height: 40px;
-  background-color: #41f6d7;
+  background-color: $color-highlight;
   border-bottom-right-radius: 50px;
   border-top-right-radius: 50px;
 }
 
 .main__heading {
+  margin: 0;
   font-weight: 700;
-  font-size: 28px;
-  margin-top: 24px;
+  font-size: $font-size-xl;
+
+  @media screen and (min-width: $screen-md) {
+    margin-bottom: 0;
+  }
 }
 
 .main__navigation {
@@ -28,6 +50,15 @@
   margin-left: 16px;
   overflow: scroll;
   white-space: nowrap;
+
+  @media screen and (min-width: $screen-md) {
+    margin-left: 24px;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    flex-wrap: wrap;
+    margin-left: 34px;
+  }
 }
 
 .main__navigation::-webkit-scrollbar {
@@ -35,42 +66,75 @@
 }
 
 .main__button {
-  font-size: 16px;
+  font-size: $font-size-md;
+  padding: 8px 16px;
   border: none;
   background: none;
-  padding: 8px 16px;
-  color: #7e7e82;
+  color: $color-text-secondary;
+
+  @media screen and (min-width: $screen-lg) {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
 }
 
 .main__button--selection--selected {
-  border: 2px solid #b8ffec;
-  background-color: #ffffff;
+  border: 2px solid $color-border--selected;
+  background-color: $color-base-secondary;
   border-radius: 6px;
 }
 
 .main__section-aboutus {
   margin-top: 24px;
+
+  @media screen and (min-width: $screen-md) {
+    display: flex;
+    margin-right: 24px;
+    margin-left: 24px;
+    gap: 48px;
+    flex-basis: 0;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    margin-right: 0;
+    margin-top: 16px;
+    margin-left: 32px;
+    display: flex;
+  }
 }
 
 .main__text-aboutus {
-  font-size: 14px;
+  font-size: $font-size-sm;
   font-weight: 400;
-  margin-left: 16px;
-  margin-right: 16px;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0 16px;
+
+  @media screen and (min-width: $screen-md) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .main__text-aboutus-2d {
+  display: none;
   margin-top: 24px;
+
+  @media screen and (min-width: $screen-md) {
+    display: block;
+  }
 }
 
 .main__readmore {
   display: flex;
   font-weight: 500;
-  font-size: 16px;
+  font-size: $font-size-md;
   margin-left: 16px;
-  margin-right: 16px;
+  gap: 8px;
+  align-items: center;
+
+  @media screen and (min-width: $screen-md) {
+    margin-top: 10px;
+    margin-left: 0;
+  }
 }
 
 .main__button-readmore {
@@ -81,7 +145,6 @@
   border: none;
   background-position: center;
   background-size: contain;
-  margin-right: 8px;
 }
 
 .main__image-aboutus {
@@ -90,9 +153,46 @@
   background-image: url(../img/MG_3223.jpg);
   background-size: contain;
   background-repeat: no-repeat;
+
+  @media screen and (min-width: $screen-md) {
+    height: 260px;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    height: 380px;
+  }
 }
 
 .main__paragraphs-aboutus-wrapper {
   max-height: 90px;
   overflow: hidden;
+
+  @media screen and (min-width: $screen-md) {
+    max-height: 120px;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    max-height: 160px;
+  }
+}
+
+.main__aboutus-wrapper {
+  @media screen and (min-width: $screen-md) {
+    width: 50%;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    margin-top: 9px;
+    width: 50%;
+  }
+}
+
+.main__image-aboutus-wrapper {
+  @media screen and (min-width: $screen-md) {
+    width: 50%;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    width: 50%;
+  }
 }
