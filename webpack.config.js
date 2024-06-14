@@ -2,9 +2,10 @@ const path = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/js/index.js',
 
   output: {
     filename: 'bundle.js',
@@ -15,6 +16,11 @@ module.exports = {
 
   module: {
     rules: [
+      {
+        test: /swiper\.esm\.js/,
+        sideEffects: false
+      },
+
       // Транспилируем js с babel
       {
         test: /\.js$/,
@@ -43,14 +49,14 @@ module.exports = {
       {
         test: /\.(eot|ttf|woff|woff2)$/,
         type: 'asset/resource',
-        dependency: { not: ['url'] },
+        dependency: { not: ['url'] }
       },
 
       // Подключаем картинки из CSS
       {
         test: /\.(svg|png|jpg|jpeg|webp)$/,
         type: 'asset/resource',
-        dependency: { not: ['url'] },
+        dependency: { not: ['url'] }
       },
 
       {
@@ -61,6 +67,8 @@ module.exports = {
   },
 
   plugins: [
+    new BundleAnalyzerPlugin(),
+
     // Подключаем файл html, стили и скрипты встроятся автоматически
     new HtmlWebpackPlugin({
       title: 'Software services',
