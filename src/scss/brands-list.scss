@@ -1,0 +1,108 @@
+.brands-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 16px;
+
+  @media screen and (min-width: $screen-md) {
+    flex-wrap: wrap;
+    row-gap: 16px;
+    column-gap: 24px;
+    margin: 24px;
+  }
+
+  @media screen and (min-width: 1100px) {
+    row-gap: 16px;
+    column-gap: 32px;
+    margin: 24px 32px;
+  }
+}
+
+.brands-list__list-item {
+  display: flex;
+  height: 72px;
+  background-color: #fff;
+  border-radius: 6px;
+  border: 1px solid #eaeaea;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  flex-wrap: nowrap;
+
+  @media screen and (min-width: $screen-md) {
+    max-width: 224px;
+    margin-right: 0 !important;
+  }
+
+  @media screen and (min-width: 1100px) {
+    max-width: 240px;
+  }
+}
+
+.brands-list__logo {
+  max-width: 128px;
+  max-height: 44px;
+}
+
+.brands-list__go-button {
+  border: none;
+  background: none;
+  background-image: url('../img/go.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+}
+
+.brands-list__acer-logo {
+  height: 25px;
+  background-image: url(../img/acer.png);
+}
+
+.brands-list__hp-logo {
+  height: 52px;
+  background-image: url(../img/hp.png);
+}
+
+.brands-list__lenovo-logo {
+  height: 32px;
+  background-image: url(../img/lenovo.png);
+}
+
+.brands-list__samsung-logo {
+  background-image: url(../img/samsung.png);
+}
+
+.brands-list__apple-logo {
+  background-image: url(../img/apple.png);
+}
+
+.brands-list__viewsonic-logo {
+  background-image: url(../img/viewsonic.png);
+}
+
+.brands-list__bosh-logo {
+  background-image: url(../img/bosh.png);
+}
+
+.brands-list__sony-logo {
+  background-image: url(../img/sony.png);
+}
+
+.brands-list__list-item--hidden768 {
+  @media screen and (min-width: $screen-md) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1100px) {
+    display: flex;
+  }
+}
+
+.brands-list__list-item--hidden1100 {
+  @media screen and (min-width: 1100px) {
+    display: none;
+  }
+}

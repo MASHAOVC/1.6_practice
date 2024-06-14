@@ -1,0 +1,17 @@
+.fade-element {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 0;
+  width: 24px;
+  height: 81px;
+  background-image: linear-gradient(
+    to right,
+    rgba(248, 248, 248, 0.01),
+    rgba(248, 248, 248, 1)
+  );
+
+  @media screen and (min-width: $screen-md) {
+    display: none;
+  }
+}

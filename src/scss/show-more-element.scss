@@ -1,0 +1,23 @@
+.show-more-element {
+  display: none;
+
+  @media screen and (min-width: $screen-md) {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      border: none;
+      background: none;
+      font-family: inherit;
+      font-weight: 500;
+      font-size: 16px;
+      color: #1b1c21;
+      position: relative;
+      left: 32px;
+    }
+  }
+
+.show-more-element__button {
+  width: 8px;
+  height: 10px;
+  background-image: url(../img/icon-expand.png);
+}
