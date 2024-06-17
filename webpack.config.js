@@ -2,7 +2,6 @@ const path = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
   entry: './src/js/index.js',
@@ -16,11 +15,6 @@ module.exports = {
 
   module: {
     rules: [
-      {
-        test: /swiper\.esm\.js/,
-        sideEffects: false
-      },
-
       // Транспилируем js с babel
       {
         test: /\.js$/,
@@ -60,15 +54,13 @@ module.exports = {
       },
 
       {
-        test: /normalize\.css$/,
+        test: /\.css$/,
         use: ['style-loader', 'css-loader']
       }
     ]
   },
 
   plugins: [
-    new BundleAnalyzerPlugin(),
-
     // Подключаем файл html, стили и скрипты встроятся автоматически
     new HtmlWebpackPlugin({
       title: 'Software services',
