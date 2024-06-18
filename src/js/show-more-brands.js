@@ -1,4 +1,4 @@
-let showMoreButton = document.querySelector('.show-more-element');
+let showMoreButton = document.querySelector('.show-more-element__brands');
 let [icon, text] = showMoreButton.children;
 let hiddenItems768 = document.querySelectorAll('.brands-list__list-item--hidden768');
 let hiddenItems1100 = document.querySelectorAll('.brands-list__list-item--hidden1100');

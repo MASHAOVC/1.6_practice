@@ -7,7 +7,11 @@
   font-size: $font-size-md;
   font-weight: 400;
   color: $color-text-secondary;
-  background-image: linear-gradient(to right, $color-base, $color-base-secondary);
+  background-image: linear-gradient(
+    to right,
+    $color-base,
+    $color-base-secondary
+  );
   margin: 0;
   padding: 16px;
 }
@@ -15,9 +19,16 @@
 .brands-slider__container {
   position: relative;
   overflow: hidden;
-  min-height: 150px;
+  min-height: 140px;
 }
 
 .brands-slider__wrapper {
   position: relative;
+
+  @media screen and (min-width: $screen-md) {
+    margin-bottom: 32px;
+  }
+  @media screen and (min-width: $screen-lg) {
+    margin-bottom: 50px;
+  }
 }

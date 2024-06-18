@@ -1,3 +1,4 @@
+@import 'devices-slider';
 @import 'fade-element';
 @import 'show-more-element';
 @import 'swiper-pagination';
@@ -14,9 +15,16 @@
 .devices-slider__container {
   position: relative;
   overflow: hidden;
-  min-height: 150px;
+  min-height: 140px;
 }
 
 .devices-slider__wrapper {
   position: relative;
+
+  @media screen and (min-width: $screen-md) {
+    margin-bottom: 32px;
+  }
+  @media screen and (min-width: $screen-lg) {
+    margin-bottom: 50px;
+  }
 }
