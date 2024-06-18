@@ -1,5 +1,4 @@
 .brands-list {
-  display: flex;
   list-style: none;
   padding: 0;
   margin: 16px;
@@ -19,11 +18,11 @@
 }
 
 .brands-list__list-item {
-  display: flex;
-  height: 72px;
-  background-color: #fff;
+  display: flex !important;
+  height: 72px !important;
+  background-color: $color-base-secondary;
   border-radius: 6px;
-  border: 1px solid #eaeaea;
+  border: 1px solid $color-border;
   justify-content: space-between;
   align-items: center;
   padding: 16px;
@@ -42,8 +41,9 @@
 }
 
 .brands-list__logo {
-  max-width: 128px;
-  max-height: 44px;
+  width: 128px;
+  height: 44px;
+  background: none;
 }
 
 .brands-list__go-button {
@@ -57,38 +57,57 @@
 }
 
 .brands-list__acer-logo {
-  height: 25px;
+  width: 94px;
+  height: 24px;
   background-image: url(../img/acer.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .brands-list__hp-logo {
+  max-width: 52px;
   height: 52px;
   background-image: url(../img/hp.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .brands-list__lenovo-logo {
-  height: 32px;
+  max-width: 108px;
   background-image: url(../img/lenovo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .brands-list__samsung-logo {
+  max-width: 116px;
   background-image: url(../img/samsung.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .brands-list__apple-logo {
   background-image: url(../img/apple.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .brands-list__viewsonic-logo {
   background-image: url(../img/viewsonic.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .brands-list__bosh-logo {
   background-image: url(../img/bosh.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .brands-list__sony-logo {
   background-image: url(../img/sony.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .brands-list__list-item--hidden768 {
