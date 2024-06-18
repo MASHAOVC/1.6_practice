@@ -6,8 +6,8 @@
 .brands-slider__heading {
   font-size: $font-size-md;
   font-weight: 400;
-  color: #7e7e82;
-  background-image: linear-gradient(to right, #f8f8f8, #ffffff);
+  color: $color-text-secondary;
+  background-image: linear-gradient(to right, $color-base, $color-base-secondary);
   margin: 0;
   padding: 16px;
 }

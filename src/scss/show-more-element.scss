@@ -10,15 +10,25 @@
       font-family: inherit;
       font-weight: 500;
       font-size: 16px;
-      color: #1b1c21;
+      color: $color-text;
       position: relative;
       left: 32px;
     }
   }
 
 .show-more-element__button {
-  width: 24px;
-  height: 24px;
+  width: 8px;
+  height: 11px;
   background-image: url(../img/icon-expand.png);
   background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.show-more-element__button--close {
+  background-image: url(../img/icon-close.png);
+}
+
+.show-more-element__button--expand {
+  background-image: url(../img/icon-expand.png);
 }

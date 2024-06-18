@@ -18,8 +18,8 @@
 }
 
 .brands-list__list-item {
-  display: flex !important;
-  height: 72px !important;
+  display: flex;
+  height: 72px;
   background-color: $color-base-secondary;
   border-radius: 6px;
   border: 1px solid $color-border;
@@ -44,6 +44,7 @@
   width: 128px;
   height: 44px;
   background: none;
+  background-position: left center;
 }
 
 .brands-list__go-button {
