@@ -1,0 +1,22 @@
+@import 'fade-element';
+@import 'show-more-element';
+@import 'swiper-pagination';
+
+.devices-slider__heading {
+  font-size: $font-size-md;
+  font-weight: 400;
+  color: $color-text-secondary;
+  background-image: linear-gradient(to right, $color-base, $color-base-secondary);
+  margin: 0;
+  padding: 16px;
+}
+
+.devices-slider__container {
+  position: relative;
+  overflow: hidden;
+  min-height: 150px;
+}
+
+.devices-slider__wrapper {
+  position: relative;
+}
