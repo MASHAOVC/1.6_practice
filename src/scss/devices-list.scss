@@ -1,0 +1,41 @@
+.devices-list {
+  display: flex;
+  padding-left: 16px;
+
+  @media screen and (min-width: $screen-md) {
+  column-gap: 24px;
+  row-gap: 16px;
+  flex-wrap: nowrap;
+  }
+}
+
+.devices-list__list-item {
+  position: relative;
+  width: 240px;
+  height: 160px;
+  background-color: $color-base-secondary;
+  border: 1px solid $color-border;
+  border-radius: 6px;
+  padding: 16px;
+  box-sizing: border-box;
+  color: $color-text;
+  font-weight: 500;
+
+  @media screen and (min-width: $screen-md) {
+    width: 224px;
+    margin-right: 0 !important;
+  }
+}
+
+.devices-list__go-button {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: none;
+  background-image: url(../img/go.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
