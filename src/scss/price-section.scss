@@ -20,3 +20,32 @@
 .price-section__container {
   margin-bottom: 16px;
 }
+
+.price-section__about-price {
+  font-size: $font-size-sm;
+  margin: 0 16px 16px 16px;
+  color: $color-text;
+}
+
+.price-section__offer-link {
+  position:relative;
+  display: inline-block;
+  font-weight: 500;
+  font-size: $font-size-md;
+  margin: 0 16px;
+  color: $color-text;
+  text-decoration: none;
+  line-height: normal;
+}
+
+.price-section__offer-link-button {
+  position: absolute;
+  top: 20px;
+  display: inline-block;
+  width: 24px;
+  height: 27px;
+  background-image: url('../img/more.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
