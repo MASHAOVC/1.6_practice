@@ -1,0 +1,61 @@
+.price-list {
+  padding-left: 8px;
+}
+
+.price-list__list-item {
+  position: relative;
+  width: 260px !important;
+  height: 200px;
+  background-color: $color-base-secondary;
+  border-radius: 6px;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.price-list__title {
+  color: $color-text-secondary;
+  font-size: $font-size-sm;
+  margin-bottom: 4px;
+}
+
+.price-list__content {
+  color: $color-text;
+  font-size: $font-size-sm;
+  margin-bottom: 16px;
+}
+
+.price-list__content:nth-child(6) {
+  margin-bottom: 4px;
+}
+
+.price-list__button {
+  position: absolute;
+  display: flex;
+  bottom: 16px;
+  right: 16px;
+  background-color: $color-brand;
+  border: none;
+  border-radius: 16px;
+  width: 119px;
+  height: 32px;
+  gap: 8px;
+  align-items: center;
+}
+
+.price-list__button-text {
+  color: $color-base-secondary;
+  font-size: $font-size-xs;
+  font-weight: 600;
+  margin-left: 12px;
+}
+
+.price-list__button-image {
+  width: 24px;
+  height: 24px;
+  background-image: url('../img/goside.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+

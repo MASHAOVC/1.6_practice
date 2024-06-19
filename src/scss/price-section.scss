@@ -1,4 +1,6 @@
 @import 'price-list';
+@import 'fade-element';
+@import 'swiper-pagination';
 
 .price-section__heading {
   font-size: $font-size-md;
@@ -13,4 +15,8 @@
   padding: 16px;
   height: 56px;
   box-sizing: border-box;
+}
+
+.price-section__container {
+  margin-bottom: 16px;
 }
