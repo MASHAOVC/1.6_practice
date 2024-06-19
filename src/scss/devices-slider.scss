@@ -10,6 +10,16 @@
   background-image: linear-gradient(to right, $color-base, $color-base-secondary);
   margin: 0;
   padding: 16px;
+  height: 80px;
+  box-sizing: border-box;
+
+  @media screen and (min-width: $screen-md) {
+    height: 56px;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    height: 56px;
+  }
 }
 
 .devices-slider__container {
@@ -20,6 +30,7 @@
 
 .devices-slider__wrapper {
   position: relative;
+  margin-bottom: 24px;
 
   @media screen and (min-width: $screen-md) {
     margin-bottom: 32px;
