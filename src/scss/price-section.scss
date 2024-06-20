@@ -15,20 +15,33 @@
   padding: 16px;
   height: 56px;
   box-sizing: border-box;
+
+  @media screen and (min-width: $screen-md) {
+    margin-bottom: 31px;
+  }
 }
 
 .price-section__container {
   margin-bottom: 16px;
+  @media screen and (min-width: $screen-md) {
+    margin-bottom: 24px;
+  }
 }
 
 .price-section__about-price {
   font-size: $font-size-sm;
   margin: 0 16px 16px 16px;
   color: $color-text;
+
+  @media screen and (min-width: $screen-md) {
+    width: 421px;
+    height: 60px;
+    margin: 0 0 16px 24px;
+  }
 }
 
 .price-section__offer-link {
-  position:relative;
+  position: relative;
   display: inline-block;
   font-weight: 500;
   font-size: $font-size-md;
@@ -36,6 +49,10 @@
   color: $color-text;
   text-decoration: none;
   line-height: normal;
+
+  @media screen and (min-width: $screen-md) {
+    margin: 0 0 0 24px;
+  }
 }
 
 .price-section__offer-link-button {
@@ -48,4 +65,27 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+
+  @media screen and (min-width: $screen-md) {
+    top: -1px;
+  }
+}
+
+.price-section__title-768 {
+  display: none;
+
+  @media screen and (min-width: $screen-md) {
+    display: flex;
+    color: $color-text-secondary;
+    font-size: $font-size-sm;
+    padding-left: 40px;
+    gap: 61px;
+    width: 500px;
+  }
+}
+
+.price-section__title-768-content-service {
+  @media screen and (min-width: $screen-md) {
+    flex-grow: 1;
+  }
 }

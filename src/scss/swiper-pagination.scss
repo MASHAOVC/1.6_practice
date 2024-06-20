@@ -1,6 +1,10 @@
 .swiper-pagination {
   position: initial;
   --swiper-pagination-bottom: -32px;
+
+  @media screen and (min-width: $screen-md) {
+    display: none;
+  }
 }
 
 .swiper-pagination-bullet {

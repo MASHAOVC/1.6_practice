@@ -1,5 +1,12 @@
 .price-list {
   padding-left: 8px;
+
+  @media screen and (min-width: $screen-md) {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 24px 0 24px;
+    margin: 0;
+  }
 }
 
 .price-list__list-item {
@@ -10,18 +17,38 @@
   border-radius: 6px;
   padding: 16px;
   box-sizing: border-box;
+
+  @media screen and (min-width: $screen-md) {
+    display: flex;
+    min-width: 720px;
+    height: 65px;
+    box-sizing: border-box;
+    border-radius: 0;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    margin-right: 0 !important;
+  }
 }
 
 .price-list__title {
   color: $color-text-secondary;
   font-size: $font-size-sm;
   margin-bottom: 4px;
+
+  @media screen and (min-width: $screen-md) {
+    display: none;
+  }
 }
 
 .price-list__content {
   color: $color-text;
   font-size: $font-size-sm;
   margin-bottom: 16px;
+
+  @media screen and (min-width: $screen-md) {
+    margin-bottom: 0;
+  }
 }
 
 .price-list__content:nth-child(6) {
@@ -40,6 +67,10 @@
   height: 32px;
   gap: 8px;
   align-items: center;
+
+  @media screen and (min-width: $screen-md) {
+    position: static;
+  }
 }
 
 .price-list__button-text {
@@ -58,4 +89,20 @@
   background-position: center;
 }
 
+.price-list__content-price {
+  @media screen and (min-width: $screen-md) {
+    width: 74px;
+  }
+}
 
+.price-list__content-time {
+  @media screen and (min-width: $screen-md) {
+    width: 81px;
+  }
+}
+
+.price-list__content-service {
+  @media screen and (min-width: $screen-md) {
+    flex-grow: 1;
+  }
+}
