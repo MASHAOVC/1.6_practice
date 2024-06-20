@@ -7,6 +7,10 @@
     justify-content: space-between;
     margin: 0 24px 25px 24px;
   }
+
+  @media screen and (min-width: $screen-lg) {
+    margin: 0 32px 21px 32px;
+  }
 }
 
 .footer__content {
@@ -20,6 +24,10 @@
     width: 218px;
     height: 48px;
     flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+
   }
 }
 

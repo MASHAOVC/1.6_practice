@@ -20,12 +20,20 @@
     margin-bottom: 31px;
     padding-left: 24px;
   }
+
+  @media screen and (min-width: $screen-lg) {
+    padding-left: 32px;
+  }
 }
 
 .price-section__container {
   margin-bottom: 16px;
   @media screen and (min-width: $screen-md) {
     margin-bottom: 24px;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    margin-bottom: 32px;
   }
 }
 
@@ -38,6 +46,10 @@
     width: 421px;
     height: 60px;
     margin: 0 0 16px 24px;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    margin-left: 32px;
   }
 }
 
@@ -54,6 +66,10 @@
   @media screen and (min-width: $screen-md) {
     margin: 0 0 0 24px;
   }
+
+  @media screen and (min-width: $screen-lg) {
+    margin-left: 32px;
+  }
 }
 
 .price-section__title-768 {
@@ -65,7 +81,13 @@
     font-size: $font-size-sm;
     padding-left: 40px;
     gap: 61px;
-    width: 500px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    gap: 160px;
+    padding-right: 335px;
   }
 }
 
