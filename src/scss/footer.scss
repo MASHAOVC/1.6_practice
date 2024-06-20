@@ -27,7 +27,6 @@
   }
 
   @media screen and (min-width: $screen-lg) {
-
   }
 }
 
@@ -39,11 +38,19 @@
 
   @media screen and (min-width: $screen-md) {
     display: inline-block;
+    margin-bottom: 0;
   }
 }
 
 .footer__content:last-child {
   @media screen and (min-width: $screen-md) {
     text-align: right;
+  }
+}
+
+.footer__content:first-child {
+  @media screen and (min-width: $screen-md) {
+    text-align: left;
+    align-self: flex-end;
   }
 }
