@@ -6,24 +6,21 @@
     display: flex;
     justify-content: space-between;
     margin: 0 24px 25px 24px;
-    max-width: 768px;
-    height: 81px;
-    flex-wrap: wrap;
   }
 }
 
 .footer__content {
-font-family: inherit;
-font-size: $font-size-sm;
-color: $color-text-secondary;
-text-align: center;
-margin: 0;
+  font-family: inherit;
+  font-size: $font-size-sm;
+  color: $color-text-secondary;
+  text-align: center;
+  margin: 0;
 
-@media screen and (min-width: $screen-md) {
-  width: 218px;
-  height: 48px;
-  flex-wrap: wrap;
-}
+  @media screen and (min-width: $screen-md) {
+    width: 218px;
+    height: 48px;
+    flex-wrap: wrap;
+  }
 }
 
 .footer__confidentiality-link {
@@ -33,6 +30,12 @@ margin: 0;
   text-align: center;
 
   @media screen and (min-width: $screen-md) {
-display: inline-block;
+    display: inline-block;
+  }
+}
+
+.footer__content:last-child {
+  @media screen and (min-width: $screen-md) {
+    text-align: right;
   }
 }
