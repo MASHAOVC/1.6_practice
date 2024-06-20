@@ -56,22 +56,6 @@
   }
 }
 
-.price-section__offer-link-button {
-  position: absolute;
-  top: 20px;
-  display: inline-block;
-  width: 24px;
-  height: 27px;
-  background-image: url('../img/more.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-
-  @media screen and (min-width: $screen-md) {
-    top: -1px;
-  }
-}
-
 .price-section__title-768 {
   display: none;
 
@@ -89,4 +73,16 @@
   @media screen and (min-width: $screen-md) {
     flex-grow: 1;
   }
+}
+
+.price-section__offer-link::after {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 10px;
+  background-image: url('../img/more.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-left: 9px;
 }
