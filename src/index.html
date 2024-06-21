@@ -10,7 +10,43 @@
     <title>Software services</title>
   </head>
   <body>
-    <header class="header">
+    <nav class="side-menu">
+      <div class="side-menu__header">
+          <div class="side-menu__header-wrapper">
+              <button class="side-menu__header-button-burger side-menu__button"></button>
+              <div class="side-menu__header-logo"></div>
+          </div>
+          <button class="side-menu__header-button-search side-menu__button"></button>
+      </div>
+
+      <ul class="side-menu__main">
+          <li class="side-menu__main-item side-menu__main-item--focused"><span class="side-menu__main-highltght"></span><a class="side-menu__main-link side-menu__main-link--focused" href="#">Ремонт техники</a></li>
+          <li class="side-menu__main-item"><a class="side-menu__main-link" href="#">Услуги и сервисы</a></li>
+          <li class="side-menu__main-item"><a class="side-menu__main-link" href="#">Корпоративным клиентам</a></li>
+          <li class="side-menu__main-item"><a class="side-menu__main-link" href="#">Продавцам техники</a></li>
+          <li class="side-menu__main-item"><a class="side-menu__main-link" href="#">Партнёрам</a></li>
+          <li class="side-menu__main-item"><a class="side-menu__main-link" href="#">Производителям</a></li>
+          <li class="side-menu__main-item"><a class="side-menu__main-link" href="#">Наши сервисные центры</a></li>
+          <li class="side-menu__main-item"><a class="side-menu__main-link" href="#">Контакты</a></li>
+      </ul>
+
+      <div class="side-menu__footer">
+          <div class="side-menu__footer-buttons-wrapper">
+              <button class="side-menu__footer-button-call side-menu__button"></button>
+              <button class="side-menu__footer-button-chat side-menu__button"></button>
+              <button class="side-menu__footer-button-profile side-menu__button"></button>
+          </div>
+          <div class="side-menu__footer-email"><a class="side-menu__footer-link" href="mailto:mail@cps.com"> mail@cps.com</a></div>
+          <div class="side-menu__footer-phone"><a class="side-menu__footer-link" href="tel:88008908900">8 800 890 8900</a></div>
+          <div class="side-menu__footer-lang">
+              <a href="#" class="side-menu__footer-ru side-menu__footer-link">RU</a>
+              <a href="#" class="side-menu__footer-en side-menu__footer-link">EN</a>
+              <a href="#" class="side-menu__footer-ch side-menu__footer-link">CH</a>
+          </div>
+      </div>
+    </nav>
+    <div class="page">
+      <header class="header">
       <div class="header__left">
         <button class="header__button-burger"></button>
         <div class="header__divider-left"></div>
@@ -37,9 +73,9 @@
         <span class="header__checkstatus-text">Статус ремонта</span>
         <button class="header__button-checkstatus"></button>
       </div>
-    </header>
+      </header>
 
-    <main class="main">
+      <main class="main">
       <section class="aboutus">
       <div class="aboutus__heading-line">
            <span class="aboutus__highlight"></span>
@@ -288,9 +324,9 @@
       <div class='price-section__about-price'>Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</div>
       <a class='price-section__offer-link' href="#">Получить коммерческое предложение</a>
     </section>
-    </main>
+      </main>
 
-    <footer class="footer">
+      <footer class="footer">
       <pre class="footer__content">© 2019 CPS
 Разработано командой Apesong
       </pre>
@@ -298,42 +334,7 @@
       <a class="footer__content footer__confidentiality-link" href="#">Политика конфиденциальности</a>
 
       <span class="footer__content">Информация, размещенная на данной странице, не является публичной офертой</span>
-    </footer>
-
-    <nav class="side-menu">
-      <div class="side-menu__header">
-          <div class="side-menu__header-wrapper">
-              <button class="side-menu__header-button-burger"></button>
-              <div class="side-menu__header-logo"></div>
-          </div>
-          <button class="side-menu__header-button-search"></button>
-      </div>
-
-      <ul class="side-menu__main">
-          <li class="side-menu__main-item side-menu__main-item--focused"><span class="side-menu__main-highltght"></span><a class="side-menu__main-link side-menu__main-link--focused" href="#">Ремонт техники</a></li>
-          <li class="side-menu__main-item"><a class="side-menu__main-link" href="#">Услуги и сервисы</a></li>
-          <li class="side-menu__main-item"><a class="side-menu__main-link" href="#">Корпоративным клиентам</a></li>
-          <li class="side-menu__main-item"><a class="side-menu__main-link" href="#">Продавцам техники</a></li>
-          <li class="side-menu__main-item"><a class="side-menu__main-link" href="#">Партнёрам</a></li>
-          <li class="side-menu__main-item"><a class="side-menu__main-link" href="#">Производителям</a></li>
-          <li class="side-menu__main-item"><a class="side-menu__main-link" href="#">Наши сервисные центры</a></li>
-          <li class="side-menu__main-item"><a class="side-menu__main-link" href="#">Контакты</a></li>
-      </ul>
-
-      <div class="footer">
-          <div class="footer__buttons-wrapper">
-              <button class="footer__button-call button"></button>
-              <button class="footer__button-chat button"></button>
-              <button class="footer__button-profile button"></button>
-          </div>
-          <div class="footer__email"><a class="footer__link" href="mailto:mail@cps.com"> mail@cps.com</a></div>
-          <div class="footer__phone"><a class="footer__link" href="tel:88008908900">8 800 890 8900</a></div>
-          <div class="footer__lang">
-              <a href="#" class="footer__ru footer__link">RU</a>
-              <a href="#" class="footer__en footer__link">EN</a>
-              <a href="#" class="footer__ch footer__link">CH</a>
-          </div>
-      </div>
-  </nav>
+      </footer>
+    </div>
   </body>
 </html>

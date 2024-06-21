@@ -1,12 +1,17 @@
 .side-menu {
-  display: flex;
+  display: none;
   flex-direction: column;
-  position: fixed;
-  width: 320px;
-  height: 100%;
+  min-width: 306px;
+  height: 100vh;
   background-color: #FFFFFF;
   box-shadow: 30px 0 40px -30px #7E7E82;
   gap: 46px;
+  z-index: 11;
+
+  @media screen and (min-width: $screen-lg) {
+    display: flex;
+    box-shadow: unset;
+  }
 }
 
 .side-menu__header {
@@ -28,14 +33,14 @@
 }
 
 .side-menu__header-button-burger {
-  background: url('statics/burger.svg') no-repeat;
+  background: url('../img/burger.svg') no-repeat;
   border: none;
   width: 40px;
   height: 40px;
 }
 
 .side-menu__header-button-search {
-  background: url('statics/search.svg') no-repeat;
+  background: url('../img/search.svg') no-repeat;
   border: none;
   width: 40px;
   height: 40px;
@@ -78,76 +83,76 @@
   border-bottom-right-radius: 40px;
 }
 
-.footer {
+.side-menu__footer {
   padding-left: 24px;
   padding-bottom: 32px;
 }
 
-.footer__buttons-wrapper {
+.side-menu__footer-buttons-wrapper {
   display: flex;
   margin-bottom: 16px;
   gap: 16px;
 }
 
-.footer__button-call {
+.side-menu__footer-button-call {
   border: none;
   background: none;
-  background-image: url('statics/call.svg');
+  background-image: url('../img/call.svg');
   width: 40px;
   height: 40px;
 }
 
-.footer__button-chat {
+.side-menu__footer-button-chat {
   border: none;
   background: none;
-  background-image: url('statics/chat.svg');
+  background-image: url('../img/chat.svg');
   width: 40px;
   height: 40px;
 }
 
-.footer__button-profile {
+.side-menu__footer-button-profile {
   border: none;
   background: none;
-  background-image: url('statics/profile.svg');
+  background-image: url('../img/profile.svg');
   width: 40px;
   height: 40px;
 }
 
-.footer__email {
+.side-menu__footer-email {
   font-weight: 500;
   font-size: 16px;
   margin-bottom: 12px;
   color: #1B1C21;
 }
 
-.footer__link {
+.side-menu__footer-link {
   text-decoration: none;
   color: #1B1C21;
 }
 
-.footer__phone {
+.side-menu__footer-phone {
   font-weight: 700;
   font-size: 24px;
   margin-bottom: 40px;
   color: #1B1C21;
 }
 
-.footer__lang {
+.side-menu__footer-lang {
   font-weight: 500;
   font-size: 16px;
   color: #1B1C21;
 }
 
-.footer__ru {
+.side-menu__footer-ru {
   color: #7E7E82;
   margin-right: 7px;
 }
 
-.footer__en {
+.side-menu__footer-en {
   margin-right: 7px;
 }
 
-.button:hover {
+.side-menu__button:hover {
   opacity: 0.5;
   transition-duration: 0.4s
 }
@@ -157,7 +162,7 @@
   transition-duration: 0.4s
 }
 
-.footer__link:hover {
+.side-menu__footer-link:hover {
   opacity: 0.7;
   transition-duration: 0.4s
 }
@@ -166,6 +171,6 @@
   opacity: 1;
 }
 
-.footer__ru:hover {
+.side-menu__footer-ru:hover {
   opacity: 1;
 }

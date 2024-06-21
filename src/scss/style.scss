@@ -14,8 +14,12 @@
 @import 'price-section';
 @import 'footer';
 @import 'side-menu';
+@import 'page';
 
 body {
+  display: flex;
+  margin: 0;
   font-family: $font-stack;
   background-color: $color-base;
 }
+
