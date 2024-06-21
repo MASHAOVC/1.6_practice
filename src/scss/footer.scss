@@ -25,9 +25,6 @@
     height: 48px;
     flex-wrap: wrap;
   }
-
-  @media screen and (min-width: $screen-lg) {
-  }
 }
 
 .footer__confidentiality-link {
@@ -45,6 +42,10 @@
 .footer__content:last-child {
   @media screen and (min-width: $screen-md) {
     text-align: right;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    width: 330px;
   }
 }
 
