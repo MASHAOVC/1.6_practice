@@ -27,7 +27,9 @@
 }
 
 .price-section__container {
+  position: relative;
   margin-bottom: 16px;
+  overflow: hidden;
   @media screen and (min-width: $screen-md) {
     margin-bottom: 24px;
   }

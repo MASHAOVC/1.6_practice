@@ -8,10 +8,15 @@
   gap: 46px;
   z-index: 11;
 
+  @media screen and (min-width: $screen-md) {
+    position: absolute;
+  }
+
   @media screen and (min-width: $screen-lg) {
     display: flex;
     box-shadow: unset;
     min-width: 306px;
+    position: unset;
   }
 }
 

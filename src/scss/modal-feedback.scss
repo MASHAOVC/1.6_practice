@@ -1,4 +1,5 @@
 .modal-feedback {
+  position: relative;
   display: none;
   min-width: 320px;
   height: 100vh;
@@ -29,7 +30,7 @@
 
   @media screen and (min-width: $screen-lg) {
     position: absolute;
-    right: 473px;
+    left: -70px;
     top: 32px;
   }
 }
