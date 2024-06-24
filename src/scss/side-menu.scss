@@ -1,7 +1,7 @@
 .side-menu {
   display: flex;
   position: absolute;
-  // display: none;
+  display: none;
   flex-direction: column;
   min-width: 100vw;
   height: 100vh;
@@ -52,6 +52,16 @@
     display: none;
   }
 }
+
+.side-menu__header-button-close {
+  display: none;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: none;
+  background-image: url(../img/close.svg);
+}
+
 
 .side-menu__header-button-search {
   background: url('../img/search.svg') no-repeat;
