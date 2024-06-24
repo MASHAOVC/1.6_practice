@@ -1,0 +1,131 @@
+// TODO remove duplication
+
+.modal-call {
+  display: none;
+  min-width: 320px;
+  height: 100vh;
+  background-color: $color-base-secondary;
+  z-index: 11;
+
+  @media screen and (min-width: $screen-lg) {
+    min-width: 440px;
+  }
+}
+
+.modal-call__header {
+  padding-top: 24px;
+  padding-left: 16px;
+  margin-bottom: 32px;
+
+  @media screen and (min-width: $screen-lg) {
+    padding-top: 0;
+  }
+}
+
+.modal-call__header-button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: none;
+  background-image: url(../img/close.svg);
+
+  @media screen and (min-width: $screen-lg) {
+    position: absolute;
+    right: 473px;
+    top: 32px;
+  }
+}
+
+.modal-call__heading-line {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.modal-call__heading-highltght {
+  width: 4px;
+  height: 40px;
+  background-color: $color-highlight;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+.modal-call__heading-title {
+  font-weight: 700;
+  font-size: $font-size-xl;
+  margin: 0;
+  align-self: center;
+}
+
+.modal-call__inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0 16px;
+  margin-bottom: 16px;
+
+  @media screen and (min-width: $screen-lg) {
+    padding: 0 32px;
+  }
+}
+
+.modal-call__field {
+  height: 48px;
+  padding: 12px 16px;
+  box-sizing: border-box;
+  border: 1px solid $color-border;
+  border-radius: 8px;
+  color: $color-slider-bullet--active;
+}
+
+.modal-call__footer-info {
+  padding: 0 16px;
+  font-size: $font-size-sm;
+  font-weight: 500;
+  color: $color-text-secondary;
+  margin-bottom: 19px;
+
+  @media screen and (min-width: $screen-lg) {
+    padding: 0 32px;
+    margin-bottom: 23px;
+  }
+}
+
+.modal-call__link {
+  text-decoration: none;
+  color: $color-brand;
+}
+
+.modal-call__submit-button {
+  position: absolute;
+  display: flex;
+  right: 16px;
+  background-color: $color-brand;
+  border: none;
+  border-radius: 16px;
+  width: 136px;
+  height: 32px;
+  gap: 3px;
+  align-items: center;
+
+  @media screen and (min-width: $screen-lg) {
+    right: 32px;
+  }
+}
+
+.modal-call__submit-button-text {
+  color: $color-base-secondary;
+  font-size: $font-size-xs;
+  font-weight: 600;
+  margin-left: 12px;
+  align-self: center;
+}
+
+.modal-call__submit-button-image {
+  width: 24px;
+  height: 24px;
+  background-image: url('../img/goside.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

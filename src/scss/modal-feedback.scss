@@ -1,13 +1,23 @@
 .modal-feedback {
+  display: none;
   min-width: 320px;
   height: 100vh;
+  background-color: $color-base-secondary;
+  z-index: 11;
 
+  @media screen and (min-width: $screen-lg) {
+    min-width: 440px;
+  }
 }
 
 .modal-feedback__header {
   padding-top: 24px;
   padding-left: 16px;
   margin-bottom: 32px;
+
+  @media screen and (min-width: $screen-lg) {
+    padding-top: 0;
+  }
 }
 
 .modal-feedback__header-button {
@@ -16,6 +26,12 @@
   border: none;
   background: none;
   background-image: url(../img/close.svg);
+
+  @media screen and (min-width: $screen-lg) {
+    position: absolute;
+    right: 473px;
+    top: 32px;
+  }
 }
 
 .modal-feedback__heading-line {
@@ -24,7 +40,7 @@
   margin-bottom: 24px;
 }
 
-.modal-feedback__header-highltght {
+.modal-feedback__heading-highltght {
   width: 4px;
   height: 40px;
   background-color: $color-highlight;
@@ -32,7 +48,7 @@
   border-top-right-radius: 50px;
 }
 
-.modal-feedback__header-title {
+.modal-feedback__heading-title {
   font-weight: 700;
   font-size: $font-size-xl;
   margin: 0;
@@ -45,6 +61,10 @@
   gap: 16px;
   padding: 0 16px;
   margin-bottom: 16px;
+
+  @media screen and (min-width: $screen-lg) {
+    padding: 0 32px;
+  }
 }
 
 .modal-feedback__field {
@@ -65,6 +85,12 @@
   font-size: $font-size-sm;
   font-weight: 500;
   color: $color-text-secondary;
+  margin-bottom: 19px;
+
+  @media screen and (min-width: $screen-lg) {
+    padding: 0 32px;
+    margin-bottom: 23px;
+  }
 }
 
 .modal-feedback__link {
@@ -75,7 +101,6 @@
 .modal-feedback__submit-button {
   position: absolute;
   display: flex;
-  bottom: 16px;
   right: 16px;
   background-color: $color-brand;
   border: none;
@@ -84,6 +109,10 @@
   height: 32px;
   gap: 3px;
   align-items: center;
+
+  @media screen and (min-width: $screen-lg) {
+    right: 32px;
+  }
 }
 
 .modal-feedback__submit-button-text {
