@@ -1,5 +1,4 @@
 .side-menu {
-  display: flex;
   position: absolute;
   display: none;
   flex-direction: column;
@@ -42,24 +41,17 @@
   background-size: contain;
 }
 
-.side-menu__header-button-burger {
-  background: url('../img/burger.svg') no-repeat;
-  border: none;
-  width: 40px;
-  height: 40px;
-
-  @media screen and (min-width: $screen-lg) {
-    display: none;
-  }
-}
-
 .side-menu__header-button-close {
-  display: none;
   width: 40px;
   height: 40px;
   border: none;
   background: none;
   background-image: url(../img/close.svg);
+
+
+  @media screen and (min-width: $screen-lg) {
+    display: none;
+  }
 }
 
 
