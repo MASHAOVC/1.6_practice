@@ -4,6 +4,7 @@
 @import 'swiper-pagination';
 
 .brands-slider__heading {
+  min-width: 100vw;
   font-size: $font-size-md;
   font-weight: 400;
   color: $color-text-secondary;

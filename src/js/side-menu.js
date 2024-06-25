@@ -4,6 +4,11 @@ let sideMenu = document.querySelector('.side-menu')
 let mainPage = document.querySelector('.page')
 let overlay = document.querySelector('.overlay')
 
+burgerButton.addEventListener('click', open)
+closeButton.addEventListener('click', close)
+overlay.addEventListener('click', close)
+window.addEventListener('resize', normalize)
+
 function open() {
   sideMenu.style.display = 'flex'
   overlay.style.display = 'flex'
@@ -21,8 +26,3 @@ function normalize() {
     close()
   }
 }
-
-burgerButton.addEventListener('click', open)
-closeButton.addEventListener('click', close)
-overlay.addEventListener('click', close)
-window.addEventListener('resize', normalize)
