@@ -1,14 +1,20 @@
 // TODO remove duplication
 
 .modal-call {
+  position: absolute;
+  right: 0;
   display: none;
-  min-width: 320px;
+  width: 100vw;
   height: 100vh;
   background-color: $color-base-secondary;
   z-index: 11;
 
+  @media screen and (min-width: 450px) {
+    width: 320px;
+  }
+
   @media screen and (min-width: $screen-lg) {
-    min-width: 440px;
+    width: 440px;
   }
 }
 
