@@ -107,6 +107,7 @@
   height: 32px;
   gap: 8px;
   align-items: center;
+  cursor: pointer;
 
   @media screen and (min-width: $screen-md) {
     position: static;
@@ -151,6 +152,7 @@
 }
 
 .price-list__button:hover {
-  opacity: 0.5;
+  opacity: 0.8;
   transition-duration: 0.4s;
 }
+

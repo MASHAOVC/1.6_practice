@@ -53,6 +53,7 @@
   background-image: url(../img/go.png);
   background-repeat: no-repeat;
   background-size: cover;
+  cursor: pointer;
 }
 
 .devices-list__list-item--hidden768 {
@@ -72,6 +73,6 @@
 }
 
 .devices-list__go-button:hover {
-  opacity: 0.5;
+  opacity: 0.7;
   transition-duration: 0.4s;
 }

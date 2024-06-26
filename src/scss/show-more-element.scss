@@ -1,5 +1,6 @@
 .show-more-element {
   display: none;
+  cursor: pointer;
 
   @media screen and (min-width: $screen-md) {
       display: flex;

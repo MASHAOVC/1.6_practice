@@ -78,6 +78,10 @@
   }
 }
 
+.aboutus__button {
+  cursor: pointer;
+}
+
 .aboutus__button--selection--selected {
   border: 2px solid $color-border--selected;
   background-color: $color-base-secondary;
@@ -209,6 +213,10 @@
 
 .aboutus__button--selection--selected:hover {
   opacity: 1;
+}
+
+.aboutus__readmore {
+  cursor: pointer;
 }
 
 .aboutus__readmore:hover {
