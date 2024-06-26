@@ -1,7 +1,7 @@
 let burgerButton = document.querySelector('.header__button-burger')
 let closeButton = document.querySelector('.side-menu__header-button-close')
 let sideMenu = document.querySelector('.side-menu')
-let overlay = document.querySelector('.overlay__page')
+let overlay = document.querySelector('.overlay__side-menu')
 
 burgerButton.addEventListener('click', open)
 closeButton.addEventListener('click', close)
