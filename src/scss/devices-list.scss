@@ -70,3 +70,8 @@
     display: none;
   }
 }
+
+.devices-list__go-button:hover {
+  opacity: 0.5;
+  transition-duration: 0.4s;
+}
