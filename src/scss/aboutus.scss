@@ -139,7 +139,7 @@
   }
 }
 
-.aboutus__button-readmore {
+.aboutus__icon-readmore {
   background-image: url(../img/icon-expand.png);
   width: 8px;
   height: 11px;
@@ -211,11 +211,13 @@
   opacity: 1;
 }
 
-.aboutus__readmore:hover {
+.aboutus__text-readmore:hover {
   opacity: 0.7;
   transition-duration: 0.4s;
+}
 
-  .aboutus__button-readmore {
+.aboutus__readmore:hover {
+  .aboutus__icon-readmore {
     animation: moveIcon 0.5s infinite alternate;
     animation-timing-function: ease-in-out;
   }
