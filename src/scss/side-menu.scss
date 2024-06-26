@@ -82,7 +82,7 @@
   padding-left: 24px;
 }
 
-.side-menu__main-link--focused {
+.side-menu__main-link--selected {
   color: #7E7E82;
   margin-left: 20px;
   vertical-align: middle;
@@ -183,7 +183,7 @@
   transition-duration: 0.4s
 }
 
-.side-menu__main-link--focused:hover {
+.side-menu__main-link--selected:hover {
   opacity: 1;
 }
 

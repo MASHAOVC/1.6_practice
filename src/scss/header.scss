@@ -187,3 +187,8 @@
     align-self: center;
   }
 }
+
+.header__button:hover {
+  opacity: 0.5;
+  transition-duration: 0.4s
+}
