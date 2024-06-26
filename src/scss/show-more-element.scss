@@ -32,3 +32,25 @@
 .show-more-element__button--expand {
   background-image: url(../img/icon-expand.png);
 }
+
+.show-more-element__text:hover {
+  opacity: 0.7;
+  transition-duration: 0.4s;
+}
+
+.show-more-element:hover {
+  .show-more-element__button {
+    animation: moveIcon 0.5s infinite alternate;
+    animation-timing-function: ease-in-out;
+  }
+}
+
+@keyframes moveIcon {
+  0% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(2px);
+  }
+}
+
