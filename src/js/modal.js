@@ -1,7 +1,7 @@
 let callButtonHeader = document.querySelector('.header__button-call')
 let callButtonSide = document.querySelector('.side-menu__footer-button-call')
 let closeButtonCall = document.querySelector('.modal-call__header-button')
-let overlay = document.querySelector('.overlay')
+let overlay = document.querySelector('.overlay__modal')
 let modalCall = document.querySelector('.modal-call')
 let modalFeedback = document.querySelector('.modal-feedback')
 
