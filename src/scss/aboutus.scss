@@ -192,6 +192,11 @@
     max-height: 160px;
     line-height: 20px;
   }
+
+  &--open {
+    overflow: unset;
+    max-height: fit-content;
+  }
 }
 
 .aboutus__aboutus-wrapper {
