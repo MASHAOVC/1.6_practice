@@ -9,6 +9,8 @@ const swiper = new Swiper('.swiper-container', {
     clickable: true
   },
 
+  simulateTouch: true,
+
   spaceBetween: 16,
 
   keyboard: {
