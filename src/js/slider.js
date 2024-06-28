@@ -1,5 +1,5 @@
-import Swiper from 'swiper'
-import { Navigation, Pagination } from 'swiper/modules'
+import Swiper from 'swiper/bundle'
+import { Navigation, Pagination, Mousewheel} from 'swiper/modules'
 
 const swiper = new Swiper('.swiper-container', {
   modules: [Navigation, Pagination],
@@ -9,17 +9,10 @@ const swiper = new Swiper('.swiper-container', {
     clickable: true
   },
 
-  simulateTouch: true,
-
   spaceBetween: 16,
 
-  keyboard: {
-    enabled: true,
-    onlyInViewport: true,
-    pageUpDown: true
-  },
-
   mousewheel: {
+    enabled: true,
     sensitivity: 1
   },
 
