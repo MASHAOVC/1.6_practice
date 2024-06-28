@@ -124,15 +124,6 @@
   }
 }
 
-.aboutus__text-aboutus-2d {
-  display: none;
-  margin-top: 24px;
-
-  @media screen and (min-width: $screen-md) {
-    display: block;
-  }
-}
-
 .aboutus__readmore {
   display: flex;
   font-weight: 500;
@@ -190,34 +181,36 @@
 .aboutus__paragraphs-aboutus-wrapper {
   max-height: 90px;
   overflow: hidden;
+  line-height: 18px;
 
   @media screen and (min-width: $screen-md) {
-    max-height: 120px;
+    max-height: 160px;
+    line-height: 20px;
   }
 
   @media screen and (min-width: $screen-lg) {
     max-height: 160px;
+    line-height: 20px;
   }
 }
 
 .aboutus__aboutus-wrapper {
-  @media screen and (min-width: $screen-md) {
-    width: 50%;
-  }
-
   @media screen and (min-width: $screen-lg) {
     margin-top: 9px;
-    width: 50%;
   }
 }
 
 .aboutus__image-aboutus-wrapper {
+  flex-shrink: 0;
+
   @media screen and (min-width: $screen-md) {
     width: 50%;
+    min-width: 360px;
   }
 
   @media screen and (min-width: $screen-lg) {
     width: 50%;
+    min-width: 532px;
   }
 }
 
