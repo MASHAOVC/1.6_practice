@@ -39,35 +39,35 @@
   @media screen and (min-width: $screen-lg) {
     gap: 120px;
   }
-}
 
-.price-list__list-item::after {
-  @media screen and (min-width: $screen-md) {
-    content: '';
-    position: absolute;
-    top: 64px;
-    width: 95%;
-    height: 1px;
-    background-color: $color-border;
+  &::after {
+    @media screen and (min-width: $screen-md) {
+      content: '';
+      position: absolute;
+      top: 64px;
+      width: 95%;
+      height: 1px;
+      background-color: $color-border;
+    }
   }
-}
 
-.price-list__list-item:last-child::after {
-  content: '';
-  display: none;
-}
-
-.price-list__list-item:first-child {
-  @media screen and (min-width: $screen-md) {
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
+  &:first-child {
+    @media screen and (min-width: $screen-md) {
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+    }
   }
-}
 
-.price-list__list-item:last-child {
-  @media screen and (min-width: $screen-md) {
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
+  &:last-child {
+    @media screen and (min-width: $screen-md) {
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px;
+    }
+
+    &::after {
+      content: '';
+      display: none;
+    }
   }
 }
 
@@ -89,10 +89,10 @@
   @media screen and (min-width: $screen-md) {
     margin-bottom: 0;
   }
-}
 
-.price-list__content:nth-child(6) {
-  margin-bottom: 4px;
+  &:nth-child(6) {
+    margin-bottom: 4px;
+  }
 }
 
 .price-list__button {
@@ -111,6 +111,11 @@
 
   @media screen and (min-width: $screen-md) {
     position: static;
+  }
+
+  &:hover {
+    opacity: 0.8;
+    transition-duration: 0.4s;
   }
 }
 
@@ -149,10 +154,5 @@
 
   @media screen and (min-width: $screen-lg) {
   }
-}
-
-.price-list__button:hover {
-  opacity: 0.8;
-  transition-duration: 0.4s;
 }
 

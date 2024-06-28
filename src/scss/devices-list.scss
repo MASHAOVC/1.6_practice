@@ -40,6 +40,22 @@
   @media screen and (min-width: $screen-lg) {
     max-width: 240px;
   }
+
+  &--hidden768 {
+    @media screen and (min-width: $screen-md) {
+      display: none;
+    }
+
+    @media screen and (min-width: $screen-lg) {
+      display: flex;
+    }
+    }
+
+  &--hidden1100 {
+    @media screen and (min-width: $screen-lg) {
+      display: none;
+    }
+  }
 }
 
 .devices-list__go-button {
@@ -54,25 +70,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;
-}
 
-.devices-list__list-item--hidden768 {
-@media screen and (min-width: $screen-md) {
-  display: none;
-}
-
-@media screen and (min-width: $screen-lg) {
-  display: flex;
-}
-}
-
-.devices-list__list-item--hidden1100 {
-  @media screen and (min-width: $screen-lg) {
-    display: none;
+  &:hover {
+    opacity: 0.7;
+    transition-duration: 0.4s;
   }
-}
-
-.devices-list__go-button:hover {
-  opacity: 0.7;
-  transition-duration: 0.4s;
 }

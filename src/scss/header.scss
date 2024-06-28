@@ -190,9 +190,10 @@
 
 .header__button {
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+    transition-duration: 0.4s
+  }
 }
 
-.header__button:hover {
-  opacity: 0.7;
-  transition-duration: 0.4s
-}

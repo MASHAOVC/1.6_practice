@@ -73,6 +73,23 @@
   @media screen and (min-width: $screen-lg) {
     margin-left: 32px;
   }
+
+  &:hover {
+    opacity: 0.8;
+    transition-duration: 0.4s;
+  }
+
+  &::after {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 10px;
+    background-image: url('../img/more.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-left: 9px;
+  }
 }
 
 .price-section__title-768 {
@@ -99,21 +116,4 @@
   @media screen and (min-width: $screen-md) {
     flex-grow: 1;
   }
-}
-
-.price-section__offer-link::after {
-  content: '';
-  display: inline-block;
-  width: 6px;
-  height: 10px;
-  background-image: url('../img/more.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  margin-left: 9px;
-}
-
-.price-section__offer-link:hover {
-  opacity: 0.8;
-  transition-duration: 0.4s;
 }

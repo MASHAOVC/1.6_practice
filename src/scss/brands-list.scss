@@ -38,6 +38,22 @@
   @media screen and (min-width: $screen-lg) {
     max-width: 240px;
   }
+
+  &--hidden768 {
+    @media screen and (min-width: $screen-md) {
+      display: none;
+    }
+
+    @media screen and (min-width: $screen-lg) {
+      display: flex;
+    }
+  }
+
+  &--hidden1100 {
+    @media screen and (min-width: $screen-lg) {
+      display: none;
+    }
+  }
 }
 
 .brands-list__logo {
@@ -56,6 +72,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+    transition-duration: 0.4s
+  }
 }
 
 .brands-list__acer-logo {
@@ -112,24 +133,4 @@
   background-size: contain;
 }
 
-.brands-list__list-item--hidden768 {
-  @media screen and (min-width: $screen-md) {
-    display: none;
-  }
-
-  @media screen and (min-width: $screen-lg) {
-    display: flex;
-  }
-}
-
-.brands-list__list-item--hidden1100 {
-  @media screen and (min-width: $screen-lg) {
-    display: none;
-  }
-}
-
-.brands-list__go-button:hover {
-  opacity: 0.7;
-  transition-duration: 0.4s
-}
 

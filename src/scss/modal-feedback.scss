@@ -32,11 +32,17 @@
   border: none;
   background: none;
   background-image: url(../img/close.svg);
+  cursor: pointer;
 
   @media screen and (min-width: $screen-lg) {
     position: absolute;
     left: -70px;
     top: 32px;
+  }
+
+  &:hover {
+    opacity: 0.7;
+    transition-duration: 0.4s;
   }
 }
 
@@ -102,6 +108,11 @@
 .modal-feedback__link {
   text-decoration: none;
   color: $color-brand;
+
+  &:hover {
+    opacity: 0.8;
+    transition-duration: 0.4s;
+  }
 }
 
 .modal-feedback__submit-button {
@@ -115,9 +126,15 @@
   height: 32px;
   gap: 3px;
   align-items: center;
+  cursor: pointer;
 
   @media screen and (min-width: $screen-lg) {
     right: 32px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+    transition-duration: 0.4s;
   }
 }
 

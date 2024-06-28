@@ -58,10 +58,10 @@
     flex-wrap: wrap;
     margin-left: 34px;
   }
-}
 
-.aboutus__navigation::-webkit-scrollbar {
-  display: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .aboutus__button {
@@ -71,21 +71,27 @@
   border: none;
   background: none;
   color: $color-text-secondary;
+  cursor: pointer;
 
   @media screen and (min-width: $screen-lg) {
     padding-left: 22px;
     padding-right: 22px;
   }
-}
 
-.aboutus__button {
-  cursor: pointer;
-}
+  &:hover {
+    opacity: 0.7;
+    transition-duration: 0.4s
+  }
 
-.aboutus__button--selection--selected {
-  border: 2px solid $color-border--selected;
-  background-color: $color-base-secondary;
-  border-radius: 6px;
+  &--selection--selected {
+    border: 2px solid $color-border--selected;
+    background-color: $color-base-secondary;
+    border-radius: 6px;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
 }
 
 .aboutus__section-aboutus {
@@ -136,10 +142,23 @@
   align-items: center;
   border: none;
   background: none;
+  cursor: pointer;
 
   @media screen and (min-width: $screen-md) {
     margin-top: 10px;
     margin-left: 0;
+  }
+
+  &:hover {
+    .aboutus__icon-readmore {
+      animation: moveIcon 0.5s infinite alternate;
+      animation-timing-function: ease-in-out;
+    }
+
+    .aboutus__text-readmore {
+      opacity: 0.7;
+      transition-duration: 0.4s;
+    }
   }
 }
 
@@ -204,31 +223,6 @@
 
 .aboutus__container {
   position: relative;
-}
-
-.aboutus__button:hover {
-  opacity: 0.7;
-  transition-duration: 0.4s
-}
-
-.aboutus__button--selection--selected:hover {
-  opacity: 1;
-}
-
-.aboutus__readmore {
-  cursor: pointer;
-}
-
-.aboutus__readmore:hover {
-  .aboutus__icon-readmore {
-    animation: moveIcon 0.5s infinite alternate;
-    animation-timing-function: ease-in-out;
-  }
-
-  .aboutus__text-readmore {
-    opacity: 0.7;
-    transition-duration: 0.4s;
-  }
 }
 
 @keyframes moveIcon {
